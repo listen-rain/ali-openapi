@@ -6,9 +6,9 @@
  * Time: 16:34
  */
 
-namespace Listen\AliApi;
+namespace Listen\AliOpenapi;
 
-use Listen\AliApi\Nls\Request\V20180518\CreateTokenRequest;
+use Listen\AliOpenapi\Nls\Request\V20180518\CreateTokenRequest;
 use Illuminate\Config\Repository;
 use DefaultProfile;
 use DefaultAcsClient;

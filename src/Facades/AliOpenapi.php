@@ -6,7 +6,7 @@
  * Time: 14:35
  */
 
-namespace Listen\AliApi\Facades;
+namespace Listen\AliOpenapi\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

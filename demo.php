@@ -8,6 +8,6 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-$config     = require __DIR__ . '/src/config/aliapi.php';
+$config     = require __DIR__ . '/src/config/aliopenapi.php';
 $repository = new \Illuminate\Config\Repository(['aliopenapi' => $config]);
 print_r((new \AliApi\CreateToken($repository))->getToken());

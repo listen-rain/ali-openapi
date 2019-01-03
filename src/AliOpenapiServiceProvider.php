@@ -6,7 +6,7 @@
  * Time: 14:36
  */
 
-namespace Listen\AliApi;
+namespace Listen\AliOpenapi;
 
 
 use Illuminate\Container\Container;

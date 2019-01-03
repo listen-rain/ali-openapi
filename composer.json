@@ -13,8 +13,8 @@
             "src/core"
         ],
         "psr-4": {
-            "Listen\\AliApi\\": "src/",
-            "Listen\\AliApi\\Nls\\": "src/nls-cloud-meta/"
+            "Listen\\AliOpenapi\\": "src/",
+            "Listen\\AliOpenapi\\Nls\\": "src/nls-cloud-meta/"
         }
     },
     "minimum-stability": "dev",

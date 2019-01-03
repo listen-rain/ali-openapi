@@ -20,14 +20,14 @@ update config/app.php
 ```
 providers => [
     ......
-    Listen\AliApi\AliOpenapiServiceProvider::class,
+    Listen\AliOpenapi\AliOpenapiServiceProvider::class,
 ],
 
 ......
 
 aliases => [
     ......
-    'AliOpenapi' => Listen\AliApi\Facades\AliOpenapi::class,
+    'AliOpenapi' => Listen\AliOpenapi\Facades\AliOpenapi::class,
 ] 
 ```
 

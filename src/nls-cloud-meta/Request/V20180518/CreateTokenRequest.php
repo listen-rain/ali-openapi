@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Listen\AliApi\Nls\Request\V20180518;
+namespace Listen\AliOpenapi\Nls\Request\V20180518;
 
 class CreateTokenRequest extends \RoaAcsRequest
 {
