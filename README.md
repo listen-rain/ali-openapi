@@ -36,6 +36,25 @@ getToken
 dd(AliOpenapi::getToken());
 ```
 
+update .env
+```
+# aliyun 配置
+ALI_ACCESS_KEY_ID=xxxxxx
+ALI_ACCESS_KEY_SECRET=xxxxxx
+```
+
 ## Use Other Framework
+
+update config/apiopenapi.php
+```php
+return [
+    'accessKeyId'     => <ACCESS_KEY_ID>,
+    'accessKeySecret' => <ACCESS_KEY_SECRET>,
+    'endpointName'    => <Endpoint>,
+    'regionId'        => <regionId>,
+    'product'         => <Product>,
+    'domain'          => 'nls-meta.cn-shanghai.aliyuncs.com'
+];
+```
 
 reference demo.php
