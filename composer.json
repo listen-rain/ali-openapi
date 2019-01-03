@@ -1,0 +1,25 @@
+{
+    "name": "listen/ali-openapi",
+    "description": "Ali Openali Package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "zhufengwei",
+            "email": "zhufengwei@aliyun.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/core"
+        ],
+        "psr-4": {
+            "Listen\\AliApi\\": "src/",
+            "Listen\\AliApi\\Nls\\": "src/nls-cloud-meta/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.2.*"
+    }
+}
