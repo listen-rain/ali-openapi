@@ -1,14 +1,12 @@
-# Ali - OpenAPi
+# Ali OpenAPi
 
-ali openapi package
+Ali Openapi Package For Laravel5
 
-# Usage
+## Usage
 
-## Use Laravel
-
-install 
+composer install 
 ```
-composer require "listen/ali-openapi:dev-master"
+composer require "listen/ali-openapi"
 ```
 
 publish config
@@ -43,18 +41,3 @@ ALI_ACCESS_KEY_ID=xxxxxx
 ALI_ACCESS_KEY_SECRET=xxxxxx
 ```
 
-## Use Other Framework
-
-update config/apiopenapi.php
-```php
-return [
-    'accessKeyId'     => <ACCESS_KEY_ID>,
-    'accessKeySecret' => <ACCESS_KEY_SECRET>,
-    'endpointName'    => <Endpoint>,
-    'regionId'        => <regionId>,
-    'product'         => <Product>,
-    'domain'          => 'nls-meta.cn-shanghai.aliyuncs.com'
-];
-```
-
-reference demo.php
