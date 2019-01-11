@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: <zhufengwei@100tal.com>
- * Date: 2019/1/3
- * Time: 14:36
- */
 
 namespace Listen\AliOpenapi;
 

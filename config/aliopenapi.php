@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: <zhufengwei@100tal.com>
- * Date: 2019/1/2
- * Time: 17:10
- */
 
 return [
     'accessKeyId'     => env('ALI_ACCESS_KEY_ID', ''),
