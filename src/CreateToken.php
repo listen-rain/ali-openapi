@@ -11,9 +11,14 @@ use ClientException;
 
 class CreateToken
 {
-    private $config;
-    private $client;
-    private $clientProfile;
+    use CallbackTrait {
+        CallbackTrait::__construct as private callbackConstruct;
+    }
+
+    private          $config;
+    private          $client;
+    private          $clientProfile;
+    protected static $logger;
 
     public function __construct(Repository $config)
     {
@@ -23,6 +28,8 @@ class CreateToken
         self::defineProxy();
         $this->addEndpoint();
         $this->setProfile();
+
+        $this->callbackConstruct();
     }
 
     /**
@@ -71,11 +78,21 @@ class CreateToken
                 new CreateTokenRequest()
             );
 
+            if (!$response) {
+                $this->applyCallback('aliopenapi', '获取阿里 Token 失败', 0);
+
+                return false;
+            }
+
             return $response->Token;
         } catch (ServerException $e) {
-            print "Error: " . $e->getErrorCode() . " Message: " . $e->getMessage() . "\n";
+            $this->applyCallback('aliopenapi', $e->getMessage(), $e->getErrorCode());
+
+            return false;
         } catch (ClientException $e) {
-            print "Error: " . $e->getErrorCode() . " Message: " . $e->getMessage() . "\n";
+            $this->applyCallback('aliopenapi', $e->getMessage(), $e->getErrorCode());
+
+            return false;
         }
     }
 
