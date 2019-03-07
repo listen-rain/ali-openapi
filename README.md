@@ -2,6 +2,14 @@
 
 Ali Openapi Package For Laravel5
 
+[![Latest Stable Version](https://poser.pugx.org/listen/ali-openapi/v/stable)](https://packagist.org/packages/listen/ali-openapi)
+[![Total Downloads](https://poser.pugx.org/listen/ali-openapi/downloads)](https://packagist.org/packages/listen/ali-openapi)
+[![Latest Unstable Version](https://poser.pugx.org/listen/ali-openapi/v/unstable)](https://packagist.org/packages/listen/ali-openapi)
+[![License](https://poser.pugx.org/listen/ali-openapi/license)](https://packagist.org/packages/listen/ali-openapi)
+[![Monthly Downloads](https://poser.pugx.org/listen/ali-openapi/d/monthly)](https://packagist.org/packages/listen/ali-openapi)
+[![Daily Downloads](https://poser.pugx.org/listen/ali-openapi/d/daily)](https://packagist.org/packages/listen/ali-openapi)
+[![composer.lock](https://poser.pugx.org/listen/ali-openapi/composerlock)](https://packagist.org/packages/listen/ali-openapi)
+
 ## Usage
 
 composer install 
